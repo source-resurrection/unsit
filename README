@@ -1,0 +1,25 @@
+			  Unsit, version 1.5
+
+These are the souces for "unsit", a Unix program for breaking apart
+StuffIt archive files created on a Macintosh into separate files on
+the Unix system.  See the documentation at the beginning of "unsit.c"
+or the man page "unsit.1" for more information.
+
+To build the program, compile unsit.c and updcrc.c and link together.
+If your system doesn't have the getopt() routine in its standard
+library, also compile getopt.c and include it in the link.
+
+This program opens a pipe to the "compress" program for doing the
+uncompression of some of the files in the archive.  Most Unix sites
+probably already have "compress".  If not, it can be found in the
+comp.sources.unix archives.
+
+Comments and bug reports should be send to weber%brand.usc.edu@oberon.usc.edu
+
+
+				Allan G. Weber
+				Signal and Image Processing Institute
+				University of Southern California
+				Powell Hall 306, MC-0272
+				Los Angeles, CA 90089-0272
+				(213) 743-5519
